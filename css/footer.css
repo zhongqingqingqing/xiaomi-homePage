@@ -1,0 +1,114 @@
+.footer-top {
+  height: 75px;
+  padding: 27px 0;
+  border-bottom: 1px solid #e0e0e0;
+  color: #616161;
+}
+
+.footer-top a {
+  width: 20%;
+  text-align: center;
+  border-right: 1px solid #e0e0e0;
+  height: 20px;
+  line-height: 20px;
+  font-size: 16px;
+  vertical-align: 2px;
+}
+
+.footer-top a:last-child {
+  border-right: 0;
+}
+
+.footer-top .iconfont {
+  font-size: 26px;
+  vertical-align: -4px;
+}
+
+/* 页脚--底部 -- 左侧 */
+
+.footer-bottom {
+  padding: 40px 0;
+}
+
+.footer-links {
+  /* outline: 1px solid red; */
+  text-align: center;
+}
+
+.footer-links h3 {
+  font-size: 14px;
+  color: #424242;
+  font-weight: normal;
+  margin-bottom: 26px;
+}
+.footer-links a {
+  display: block;
+  width: 160px;
+  font-size: 12px;
+  color: #757575;
+  margin-bottom: 10px;
+}
+
+.footer-links a:hover {
+  color: #ff6700;
+}
+
+/* 页脚  底部  -- 右侧 */
+.footer-contact {
+  width: 245px;
+  /* outline: 1px solid blueviolet; */
+  border-left: 1px solid #e0e0e0;
+  text-align: center;
+}
+
+.footer-phone {
+  font-size: 22px;
+  color: #ff6700;
+}
+
+.footer-phone-desc {
+  font-size: 12px;
+  color: #757575;
+  margin-bottom: 5px;
+}
+
+.footer-custcare {
+  display: block;
+  border: 1px solid #ff6700;
+  width: 118px;
+  height: 30px;
+  line-height: 30px;
+  margin-left: 25%;
+  color: #ff6700;
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+
+.footer-custcare .iconfont {
+  font-size: 12px;
+}
+
+.footer-custcare:hover {
+  color: #fff;
+  background: #ff6700;
+  cursor: pointer;
+}
+/* 订阅部分 */
+.footer-subscribe {
+  color: #757575;
+  font-size: 12px;
+}
+
+.footer-subscribe .iconfont {
+  margin-left: 6px;
+  vertical-align: -5px;
+  font-size: 24px;
+}
+
+.footer-subscribe:hover {
+  color: #757575;
+}
+
+.footer-subscribe .iconfont:hover {
+  color: #ff6700;
+}

@@ -1,0 +1,128 @@
+.banner {
+  height: 460px;
+  position: relative;
+}
+
+.banner-cover img {
+  width: 1226px;
+  height: 460px;
+}
+
+/* 箭头的通用样式 */
+.banner-pointer {
+  width: 40px;
+  height: 70px;
+  top: 50%;
+  margin-top: -35px;
+  line-height: 70px;
+  text-align: center;
+  color: #b8c3cb;
+}
+.banner-pointer .iconfont {
+  font-size: 30px;
+}
+.banner-pointer-left {
+  position: absolute;
+  left: 234px;
+}
+
+.banner-pointer-right {
+  position: absolute;
+  right: 0;
+}
+
+/* 鼠标移入时的样式 */
+.banner-pointer:hover {
+  background: rgb(0, 0, 0, 0.5);
+  color: #fff;
+  cursor: pointer;
+}
+
+/* banner-dots的通用样式 */
+.banner-dots {
+  position: absolute;
+  right: 30px;
+  bottom: 30px;
+  cursor: pointer;
+}
+
+.banner-dots span {
+  width: 10px;
+  height: 10px;
+  background: rgb(157, 255, 0);
+  border: 2px solid rgb(255, 255, 255, 0.3);
+  background: rgb(0, 0, 0, 0.4);
+  border-radius: 50%;
+  margin: 0 4px;
+}
+
+/* 选中的样式 */
+.banner-dots span.banner-dots-selected {
+  background: rgb(255, 255, 255, 0.3);
+  border-color: rgb(0, 0, 0, 0.4);
+}
+
+/* 菜单 --开始*/
+.banner-menu {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 234px;
+  height: 460px;
+  background: rgb(105, 101, 101, 0.6);
+  padding: 20px 0;
+}
+
+.banner-menu-item {
+  height: 42px;
+  line-height: 42px;
+  padding: 0 20px 0 30px;
+  color: #fff;
+}
+
+/* 移入li时背景变色 */
+.banner-menu li:hover .banner-menu-item {
+  background: #ff6700;
+}
+/* 子菜单 */
+.banner-sub-menu {
+  height: 460px;
+  width: 992px;
+  position: absolute;
+  left: 234px;
+  top: 0;
+  outline: 1px solid #eee;
+  background: #fff;
+  display: none;
+}
+
+.banner-sub-menu a {
+  width: 25%;
+  height: 16.666%;
+  padding: 0 20px;
+}
+
+.banner-sub-menu img {
+  width: 40px;
+  height: 40px;
+  margin-top: 17px;
+  margin-right: 12px;
+}
+
+.banner-sub-menu span {
+  width: 154px;
+  height: 100%;
+  margin-top: 28px;
+
+  /* 超出文本打点表示 */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* 鼠标移入li时会弹出子菜单 */
+.banner-menu li:hover .banner-sub-menu {
+  display: block;
+}
+
+/* 横幅结束 */

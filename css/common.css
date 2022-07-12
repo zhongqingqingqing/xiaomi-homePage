@@ -1,0 +1,56 @@
+* {
+  /* 清除页面的默认样式 */
+  margin: 0;
+  padding: 0;
+  /* 放脱发神器 */
+  box-sizing: border-box;
+  /* 清除列表圆点 */
+  list-style: none;
+}
+*::after,
+::before {
+  box-sizing: border-box;
+}
+a {
+  /* 去除超链接的下划线 */
+  text-decoration: none;
+  /* 继承父元素的颜色 */
+  color: inherit;
+}
+
+/* 超链接聚焦样式 */
+a:hover {
+  color: #ff6700;
+}
+
+/* 页面通用设置 */
+html {
+  color: #333;
+  min-width: 1226px;
+  /* 字体的复合属性：大小14px、行高1.5em ，字体样式font-family:......*/
+  font: 14px/1.5 "Helvetica Neue", Helvetica, Arial, "Microsoft Yahei",
+    "Hiragino Sans GB", "Heiti SC", "WenQuanYi Micro Hei", sans-serif;
+}
+
+/* 浮动处理 */
+.fl {
+  float: left;
+}
+
+.fr {
+  float: right;
+}
+
+/* 伪元素清除浮动 */
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+/* 通用容器(水平居中） */
+.container {
+  width: 1226px;
+  margin-left: auto;
+  margin-right: auto;
+}

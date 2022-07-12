@@ -1,0 +1,78 @@
+.banner2 {
+  margin-top: 14px;
+  margin-bottom: 26px;
+}
+
+.banner2-service {
+  width: 234px;
+  height: 170px;
+  margin-right: 14px;
+  padding: 3px;
+  background: #5f5750;
+  color: #ccc;
+  font-size: 12px;
+}
+.banner2-service .iconfont {
+  font-size: 26px;
+  display: block;
+}
+
+.banner2-service a:hover {
+  color: #fff;
+}
+.banner2 > a {
+  width: 316px;
+  height: 170px;
+  margin-right: 15px;
+}
+
+.banner2 img {
+  width: 100%;
+  height: 100%;
+}
+
+.banner2 > a:last-child {
+  margin-right: 0;
+}
+
+/* banner2-service的样式 */
+.banner2-service a {
+  width: 76px;
+  height: 82px;
+  text-align: center;
+  padding-top: 10px;
+  position: relative;
+}
+
+/* 竖线样式设置 */
+.banner2-service a::before {
+  position: absolute;
+  content: "";
+  width: 1px;
+  height: 70px;
+  top: 6px;
+  left: 0px;
+  background: #665e57;
+}
+
+.banner2-service a::after {
+  position: absolute;
+  content: "";
+  width: 64px;
+  height: 1px;
+  bottom: 0;
+  left: 6px;
+  background: #665e57;
+}
+
+/* 精确选中1，4个a元素，去除竖线 */
+.banner2-service a:nth-child(3n + 1)::before {
+  content: none;
+  /* background: blue; */
+}
+
+/* 精确选中4,5,6个a元素,去除横线 */
+.banner2-service a:nth-child(n + 4)::after {
+  /* background: lightblue; */
+  content: none;
+}

@@ -1,0 +1,80 @@
+.topnav {
+  background-color: #333;
+  height: 40px;
+  color: #b0b0b0;
+  line-height: 40px;
+  font-size: 12px;
+}
+
+/* 每个a元素左右7像素的间距 */
+.topnav-menu li a {
+  padding: 0 7px;
+}
+
+/* a的右边框 */
+.topnav-menu li a {
+  border-right: 1px solid #424242;
+}
+
+/* 菜单的最后一个li元素里的a元素没有border-right */
+.topnav-menu li:last-child a {
+  border-right: none;
+}
+
+/* 菜单里a元素聚焦的样式 */
+.topnav-menu li a:hover {
+  color: #fff;
+}
+
+/* 菜单里第一个li元素里的a元素，没有左边距 */
+.topnav-menu li:first-child a {
+  padding-left: 0;
+}
+
+/* 购物车样式设置 */
+.topnav-car {
+  width: 120px;
+  height: 40px;
+  background: #424242;
+  margin-left: 13px;
+  position: relative;
+}
+
+/* 购物车超链接样式设置 */
+.topnav-link {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  line-height: 40px;
+  display: block;
+}
+
+/* 购物车详细(弹出菜单)样式设置 */
+.topnav-detail {
+  width: 320px;
+  height: 100px;
+  text-align: center;
+  line-height: 100px;
+  position: absolute;
+  top: 40px;
+  right: 0;
+  border: 1px solid #ccc;
+  border-top: none;
+  z-index: 50;
+  background: #fff;
+  /* 把样式先隐藏 */
+  display: none;
+}
+
+/* 鼠标移入购物车部分的样式设置 */
+.topnav-car:hover .topnav-detail {
+  display: block;
+}
+
+.topnav-car:hover {
+  background: #fff;
+}
+
+.topnav-car:hover .topnav-link {
+  color: #ff6700;
+}
